@@ -13,6 +13,8 @@ other source
 const express = require("express");
 var final = require("./final")
 const app = express();
+app.use(express.static('public'));
+
 const HTTP_PORT = process.env.PORT || 8080;
 
 function onHttpStart(){
